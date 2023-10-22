@@ -1,0 +1,1536 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #131716;
+	overflow-x: hidden;
+}
+
+.container {
+	max-width: 1400px;
+	padding-inline: 2rem;
+	margin-inline: auto;
+}
+
+/* @media (min-width: 1200px) { */
+.page_bgr_clr {
+	background-color: #131716;
+}
+
+.bgr_hookah {
+	background-image: url('../img/hookah.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	background-position: center;
+	position: relative;
+}
+
+.bgr_hookah::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	width: 100%;
+	height: 67px;
+	background: inherit;
+	filter: blur(17px);
+	z-index: 2;
+	background: #131716;
+}
+
+.blur-overlay {
+	position: relative;
+	z-index: 2;
+	background: #131716;
+}
+
+.bgr_girl {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 50%;
+}
+
+.mobile {
+	display: none;
+}
+
+.bgr_girl_filter {
+	position: absolute;
+	top: 50%;
+	left: -120px;
+	border-radius: 680px;
+	background: #ff844f;
+	filter: blur(243px);
+	width: 614px;
+	height: 680px;
+	flex-shrink: 0;
+	z-index: 2;
+}
+
+.bgr_smoke_left {
+	width: 50vw;
+	position: absolute;
+	left: 0;
+	bottom: -30vh;
+	transform: scale(-1, 1);
+	z-index: 5;
+}
+
+.bgr_smoke_right {
+	position: absolute;
+	width: 50vw;
+	right: 0;
+	bottom: -30vh;
+	z-index: 3;
+}
+
+.header {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 33px;
+	background-color: transparent;
+	height: 100vh;
+	position: relative;
+}
+
+.header_static {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	transition: 0.2s;
+}
+.header_scrolling {
+	background: #131716;
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+	z-index: 999;
+}
+
+li {
+	list-style: none;
+}
+
+.header_logo {
+	cursor: pointer;
+	height: clamp(90px, 25%, 152px);
+}
+
+.header_btns {
+	gap: 35px;
+	display: flex;
+}
+
+.header_btn {
+	color: #fff;
+	font-family: 'Inter';
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	cursor: pointer;
+}
+
+.order_btn_header {
+	width: 185px;
+	height: 47px;
+	display: inline-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: linear-gradient(0deg, #cb2148 0%, #ef7a0e 90.71%);
+	color: #fff;
+	font-size: clamp(0.8125rem, 0.6989rem + 0.5682vw, 1.125rem);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background: #cb2148;
+	}
+	&:active {
+		background: #cb2148;
+		box-shadow: 0px 0px 16px 0px #790a23 inset;
+	}
+}
+.header_info_btns {
+	display: flex;
+}
+
+.header_social_media {
+	margin-right: 20px;
+}
+
+.icons_tg_wa {
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	cursor: pointer;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 29px;
+	justify-content: center;
+	/* top: 277px; */
+	z-index: 7;
+	margin-top: 277px;
+	margin-block: auto;
+}
+
+.main_header {
+	color: #f0f0f0;
+	text-shadow: 0px 0px 14px rgba(255, 255, 255, 0.17);
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: 900;
+	line-height: normal;
+	margin-bottom: 40px;
+	/* width: 894px; */
+	/* height: 80px; */
+	font-size: clamp(1.875rem, 1.4286rem + 2.2321vw, 5rem);
+}
+
+.main_heading {
+	color: #fff;
+	text-align: center;
+	font-family: 'Mulish';
+	font-size: clamp(1.375rem, 1.2143rem + 0.8036vw, 2.5rem);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	/* width: 1168px; */
+	margin-bottom: 100px;
+}
+
+.order_btn {
+	/* width: clamp(288px, 25%, 353px); */
+	display: inline-flex;
+	padding: 25px 67px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 23px;
+	background: linear-gradient(0deg, #cb2148 0%, #ef7a0e 90.71%);
+	color: #fff;
+	font-size: clamp(1.25rem, 1.1136rem + 0.6818vw, 1.625rem);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	border: none;
+	cursor: pointer;
+
+	&:hover {
+		background: #cb2148;
+	}
+	&:active {
+		background: #cb2148;
+		box-shadow: 0px 0px 16px 0px #790a23 inset;
+	}
+}
+
+.main_text {
+	text-align: center;
+	margin-inline: auto;
+	/* width: 1118px; */
+	font-family: 'Oswald';
+	font-size: clamp(1.25rem, 0.6591rem + 2.4vw, 2.875rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	background: linear-gradient(0deg, #ff844f 19.28%, #ffa24d 122.89%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	margin-top: 160px;
+	padding-bottom: 100px;
+}
+
+/* RENT */
+
+.rent_block {
+	display: grid;
+	gap: 60px;
+	justify-content: center;
+	grid-template-columns: 3fr 1fr 3fr;
+}
+
+.container_rent_block {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+
+.bgr_images_rent_block {
+	overflow: hidden;
+}
+
+.molasses_holder {
+	position: absolute;
+	top: 80%;
+	left: 0;
+	height: clamp(226px, 25%, 494px);
+}
+
+.nipper {
+	position: absolute;
+	right: 0;
+	top: 40%;
+	background-position: right;
+	background-size: 283px 182px;
+	height: clamp(102px, 10em, 239px);
+}
+
+.nipper_orange_blur {
+	position: absolute;
+	right: -721px;
+	top: 45vh;
+
+	width: 896px;
+	height: 749px;
+	border-radius: 896px;
+	background: #ff844f;
+	filter: blur(151px);
+	/* overflow: hidden; */
+
+	/* border-radius: 896px;
+	background: #ff844f;
+	filter: blur(151px);
+	width: 896px;
+	height: 749px;
+	flex-shrink: 0; */
+	/* overflow: hidden; */
+}
+
+.rent_content_block {
+	display: flex;
+	flex-direction: column;
+	top: clamp(386px, 80vh, 833px);
+	gap: 30px;
+	align-items: center;
+}
+
+.rent_header {
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-family: 'Oswald';
+	font-size: clamp(1.625rem, 0.9432rem + 3.4091vw, 3.5rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 74px;
+	/* margin-top: 80px; */
+}
+
+.rent_mini_block {
+	display: flex;
+	flex-direction: column;
+	gap: 217px;
+}
+
+.mini_block-right {
+	padding-top: 281px;
+}
+
+.rent_content {
+	/* width: 488px; */
+	/* width: 60%; */
+	z-index: 1;
+}
+
+.rent_heading {
+	color: #fff;
+	font-family: 'Oswald';
+	font-size: clamp(1.375rem, 0.7841rem + 2.9545vw, 3rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.rent_paragraph {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.rent_imgs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+}
+
+.rent_img {
+	width: 129.69px;
+	height: 129.69px;
+	flex-shrink: 0;
+}
+
+.rent_img_line {
+	width: 1px;
+	height: 23px;
+	background: #ffffff;
+}
+
+/* CHOOSE HOOKAH */
+
+.choose_hookah {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
+}
+
+.choose_hookah_header {
+	font-size: clamp(1.625rem, 0.9432rem + 3.4091vw, 3.5rem);
+	font-family: 'Oswald';
+	font-style: normal;
+	text-align: center;
+	font-weight: 500;
+	line-height: normal;
+	background: linear-gradient(0deg, #ff844f 19.28%, #ffa24d 122.89%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	/* margin-bottom: 80px; */
+}
+
+.block_paragraph {
+	color: #fff;
+	text-align: center;
+	font-family: 'Oswald';
+	font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.625rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 63px;
+}
+
+.hookah_block {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	/* padding-bottom: 63px; */
+
+	/* width: 863px; */
+	/* width: clamp(863px, 80vw, 325px);
+	height: clamp(506px, 80vw, 325px); */
+}
+
+.choose_hookah_card {
+	/* width: clamp(155px, 25%, 288px);
+	height: clamp(218px, 25%, 394px); */
+	width: 288px;
+	height: 394px;
+	flex-shrink: 0;
+	border-radius: 33px;
+	background: #fff;
+	box-shadow: 8px 15px 11px 0px #000;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+	gap: 21px;
+}
+
+.choose_hookah_img_mar {
+	margin-bottom: 21px;
+}
+
+.choose_hookah_card_mini_block {
+	position: absolute;
+}
+
+.choose_hookah_content_card {
+	position: relative;
+}
+
+.choose_hookah_hit {
+	left: -60px;
+	top: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: clamp(0.875rem, 0.7386rem + 0.6818vw, 1.25rem);
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	position: absolute;
+	width: 127px;
+	height: 45px;
+	border-radius: 12px;
+	background: #ff844f;
+	z-index: 1;
+}
+
+.choose_hookah_img {
+	width: 222px;
+	/* height: 240px; */
+	padding-top: 29px;
+}
+
+.choose_hookah_content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.choose_hookah_content_name {
+	font-size: clamp(0.75rem, 0.4773rem + 1.3636vw, 1.5rem);
+	color: #000;
+	font-family: 'Mulish';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.choose_hookah_content_price {
+	font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+	color: #000;
+	text-align: center;
+	font-family: 'Mulish';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.choose_hookah_content_description {
+	color: #000;
+	font-family: 'Raleway';
+	font-size: clamp(0.625rem, 0.5341rem + 0.4545vw, 0.875rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.show_all_btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.show_all {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-decoration-line: underline;
+	background: none;
+	outline: none;
+	border: 0;
+	cursor: pointer;
+}
+
+.show_all_arrow {
+	width: 48px;
+	height: 48px;
+}
+
+/* TOBACCO */
+
+.tobacco_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tobacco_header {
+	color: #fff;
+	font-family: 'Oswald';
+	font-size: clamp(1.375rem, 0.9659rem + 2.0455vw, 2.5rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 30px;
+}
+
+.tobacco_paragraph {
+	color: #fff;
+	text-align: center;
+	font-family: 'Oswald';
+	font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.625rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	margin-bottom: 50px;
+}
+
+.tobacco_mini_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tobacco_brand {
+	display: flex;
+	justify-content: center;
+	gap: 60px;
+	padding-bottom: 100px;
+}
+
+.tobacco_brands {
+	width: clamp(59px, 16.8%, 120px);
+}
+
+/* KIT  */
+
+.kit {
+	position: relative;
+}
+
+.kit_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 100px;
+	/* position: relative; */
+}
+
+.kit_block_paragraph {
+	color: #fff;
+	text-align: center;
+	font-family: 'Oswald';
+	font-size: clamp(1rem, 0.7727rem + 1.1364vw, 1.625rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.kit_components {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 36px;
+	/* display: grid;
+	grid-template-columns: 1fr 1fr 1fr; */
+}
+
+.comp_sides {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comp_description {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.comp_card {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.comp_img {
+	/* width: 100%; */
+	width: clamp(70px, 55%, 130px);
+}
+
+.comp_center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.comp_hookah {
+	/* width: clamp(170px, 55%, 337px); */
+	width: clamp(170px, 70%, 337px);
+}
+
+.comp_line {
+	width: 181px;
+	height: 1px;
+}
+
+.nipper_kit_bgr {
+	position: absolute;
+	top: 75%;
+	left: 0;
+	height: clamp(104px, 23%, 255px);
+	z-index: -1;
+}
+
+/* RENT BUY  */
+
+.rent_buy_block {
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 100px;
+}
+
+.rent__buy {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	display: flex;
+	gap: 50px;
+}
+
+.rent_img {
+	width: 108px;
+	height: 108px;
+}
+
+.rent_p_orange {
+	color: #ffc289;
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.rent_p_white {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.rent_text {
+	color: #fff;
+	text-align: center;
+	font-family: 'Raleway';
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+/* CLIENTS */
+
+.clients_block {
+	overflow: hidden;
+}
+
+.swiper {
+	width: auto;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	/* width: 226px;
+	height: 226px; */
+	width: clamp(143px, 80vw, 226px);
+	height: clamp(143px, 80vw, 226px);
+
+	object-fit: cover;
+}
+
+.swiper_btns {
+	display: flex;
+	gap: 71px;
+	margin-top: 100px;
+	justify-content: center;
+	margin-bottom: 100px;
+}
+
+.swiper_btn_next {
+	cursor: pointer;
+}
+
+.swiper_btn_prev {
+	cursor: pointer;
+}
+
+/* Q&A  */
+
+.pink_bgr_question {
+	position: absolute;
+	left: 0;
+	width: clamp(373px, 80vw, 155px);
+	height: clamp(1290px, 80vw, 576px);
+	border-radius: 1105px;
+	background: #cb2148;
+	filter: blur(243px);
+	position: absolute;
+	left: 0;
+}
+
+.lady_bgr_question {
+	position: absolute;
+	left: 0;
+	width: 669px;
+	height: 1105px;
+	width: clamp(373px, 80vw, 155px);
+	height: clamp(1290px, 80vw, 576px);
+}
+
+.question_block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 100px;
+}
+
+.ac-container {
+	display: flex;
+	flex-direction: column;
+	width: 750px;
+	align-items: flex-start;
+}
+
+.accordion {
+	border-radius: 5px;
+	border-bottom: 2px solid #ff7253;
+	z-index: 5;
+	width: 750px;
+}
+
+.accordion_open_btn {
+	height: 42px;
+}
+
+.ac-container label {
+	font-family: 'Raleway';
+	font-size: clamp(1.125rem, 0.9432rem + 0.9091vw, 1.625rem);
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	position: relative;
+	z-index: 20;
+	display: block;
+	height: 55px;
+	cursor: pointer;
+	color: #cdcdcd;
+	display: flex;
+	align-items: center;
+	padding: 20px 24px;
+	background: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.ac-container label:hover {
+	background: #2d2d2d;
+	border-radius: 5px;
+	transition: 0.04s;
+}
+
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover {
+	background: #2d2d2d;
+	border-radius: 5px;
+}
+
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after {
+	content: '';
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	right: 13px;
+	top: 7px;
+	transition: 2s ease-in-out;
+}
+
+.ac-container input {
+	display: none;
+}
+
+.ac-container article {
+	margin-top: -1px;
+	overflow: hidden;
+	height: 0px;
+	position: relative;
+	z-index: 10;
+}
+
+.ac-container input:checked ~ article {
+	height: fit-content;
+}
+
+.ac-container article p {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+	font-style: normal;
+	background-color: #2d2d2d;
+	font-weight: 400;
+	line-height: normal;
+	align-items: center;
+	padding: 20px 24px;
+}
+
+/* ЗАЯВКА  */
+
+.rewiew {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: fit-content;
+
+	background: linear-gradient(
+		358deg,
+		#131716 57.23%,
+		rgba(19, 23, 22, 0.67) 83.78%,
+		rgba(19, 23, 22, 0) 97.76%
+	);
+	z-index: 3;
+	position: relative;
+}
+
+.rewiew_block {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 153px;
+}
+
+.rewiew_block_container {
+	display: flex;
+	align-items: center;
+	gap: 153px;
+}
+
+.rewiew_content {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.rewiew_header {
+	color: #fff;
+	font-family: 'Oswald';
+	font-size: clamp(1.375rem, 0.6023rem + 3.8636vw, 3.5rem);
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.rewiew_heading {
+	color: #fff;
+	font-family: 'Raleway';
+	font-size: clamp(1rem, 0.8182rem + 0.9091vw, 1.5rem);
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.rewiew_form {
+	background-color: #fff;
+	border-radius: 15%;
+	width: 100px;
+	height: 100px;
+}
+
+.bgi_rewiew {
+	background-image: url(../img/cupBtm.png);
+	display: flex;
+	justify-content: center;
+	width: 392px;
+	height: 392px;
+	position: relative;
+	justify-items: center;
+	justify-content: center;
+	margin-top: -150px;
+	z-index: 5;
+}
+
+/* FOOTER  */
+
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #d9d9d91a;
+	width: 100%;
+}
+
+* {
+	/* outline: 1px solid lightgreen; */
+}
+
+/* } */
+
+@media (max-width: 1024px) {
+	.rewiew_block_container {
+		display: flex;
+		flex-direction: column;
+		gap: 86px;
+	}
+
+	.rent_imgs {
+		gap: 23px;
+	}
+
+	.rent_img_line {
+		height: 50px;
+	}
+
+	.molasses_holder {
+		top: 82%;
+	}
+
+	.kit_components {
+		gap: 0;
+	}
+
+	.nipper {
+		top: 30%;
+	}
+
+	.swiper_btns {
+		display: none;
+	}
+
+	.ac-container {
+		width: 500px;
+		gap: 10px;
+	}
+
+	.nipper_kit_bgr {
+		top: 80%;
+	}
+
+	.swiper {
+		margin-bottom: 100px;
+	}
+
+	.accordion {
+		background: #131716;
+		width: auto;
+	}
+
+	.bgr_smoke_left {
+		bottom: -18%;
+	}
+
+	.bgr_smoke_right {
+		bottom: -18%;
+	}
+}
+
+@media (max-width: 988px) {
+	.hookah_block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* justify-items: start; */
+		justify-content: start;
+		width: fit-content;
+		margin-inline: auto;
+	}
+
+	.choose_hookah_img {
+		width: 199px;
+		padding-top: 29px;
+	}
+
+	.tobacco_brand {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 769px) {
+	.header_social_media {
+		margin-right: 0;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	#burger__checkbox {
+		display: contents;
+	}
+
+	#burger__checkbox:checked + .burger__label {
+		position: relative;
+		z-index: 100;
+		width: 40px;
+	}
+
+	body:has(#burger__checkbox:checked) {
+		overflow-y: hidden;
+	}
+
+	#burger__checkbox:checked + .burger__label + .header__nav_mobile {
+		opacity: 1;
+		transform: translateY(0);
+		top: 0;
+		right: 0;
+		width: 92vw;
+		background: #131716;
+		height: 370px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.header__menu-overlay {
+		position: fixed;
+		inset: 0;
+		z-index: 1;
+		transition: background-color 0.4s;
+		pointer-events: none;
+	}
+
+	.header__nav_mobile,
+	.stroke {
+		background: #ffffff;
+		z-index: 3;
+	}
+	#burger__checkbox:checked
+		+ .burger__label
+		+ .header__nav_mobile
+		+ .header__menu-overlay {
+		background: rgba(0, 0, 0, 0.7);
+		pointer-events: visible;
+	}
+
+	.burger__label {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+	.burger__label:hover {
+		cursor: pointer;
+	}
+	.stroke {
+		display: block;
+		width: 46px;
+		height: 3px;
+		border-radius: 4px;
+		transition-property: width, opacity, transform;
+		transform-origin: left;
+	}
+	#burger__checkbox:checked + .burger__label .stroke {
+		background-color: #f8f8f8;
+		width: 50px;
+	}
+	#burger__checkbox:checked + .burger__label .stroke_1 {
+		transform: translateX(2px) rotate(45deg);
+	}
+	#burger__checkbox:checked + .burger__label .stroke_2 {
+		width: 0;
+		opacity: 0;
+		transform: translateX(14px);
+	}
+	#burger__checkbox:checked + .burger__label .stroke_3 {
+		transform: translateX(2px) rotate(-45deg);
+	}
+	.header__nav_desktop {
+		display: none;
+		visibility: hidden;
+	}
+	.header__nav_mobile {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 20px 40px;
+		opacity: 0;
+		transition-property: transform, opacity;
+		transform: translateY(-100%);
+	}
+	.header__contacts-box {
+		display: none;
+	}
+
+	.header_mob_tgwa {
+		display: flex;
+		gap: 6px;
+	}
+
+	.header_btns {
+		display: none;
+	}
+
+	.header__list_mob {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		z-index: 5;
+		position: fixed;
+	}
+
+	.header_info_btns {
+		display: none;
+	}
+
+	.order_bnt {
+		padding: 14px 18px;
+	}
+
+	.main_header {
+		text-align: center;
+	}
+
+	.main_header {
+		width: 573px;
+	}
+
+	.main_heading {
+		width: 573px;
+	}
+
+	.header {
+		height: 100vh;
+	}
+
+	.bgr_smoke_left {
+		top: 80%;
+	}
+
+	.bgr_smoke_right {
+		top: 80%;
+	}
+
+	.rent_content_block {
+		gap: 30px;
+	}
+
+	.rent__buy {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: start;
+		width: fit-content;
+		margin-inline: auto;
+		gap: 20px;
+	}
+
+	.block_paragraph {
+		width: auto;
+	}
+
+	.rent_img_line {
+		height: 80px;
+	}
+
+	.rent_block {
+		grid-template-areas:
+			'b a'
+			'b c';
+		grid-template-columns: 1fr 2fr;
+		gap: 25px;
+	}
+
+	.rent_mini_block {
+		gap: 25px;
+		grid-area: a;
+	}
+
+	.rent_imgs {
+		grid-area: b;
+	}
+
+	.mini_block-right {
+		gap: 25px;
+		padding-top: 0;
+		grid-area: c;
+	}
+
+	.kit_components {
+		gap: 0;
+	}
+
+	.molasses_holder {
+		top: 85%;
+	}
+
+	.nipper {
+		top: 27%;
+		z-index: 1;
+	}
+
+	.choose_hookah_card {
+		width: 270px;
+		height: 370px;
+	}
+
+	.choose_hookah_hit {
+		left: -115px;
+		padding-right: 31px;
+		justify-content: flex-end;
+	}
+
+	.choose_hookah_content_name {
+		font-weight: 500;
+	}
+
+	.tobacco_paragraph {
+		width: auto;
+	}
+
+	.tobacco_brand {
+		gap: 25px;
+	}
+
+	.tobacco_card_block {
+		gap: 20px;
+	}
+
+	.rent_img {
+		width: 90px;
+		height: 90px;
+	}
+
+	.comp_line {
+		width: 75px;
+	}
+
+	.swiper {
+		margin-top: 70px;
+	}
+
+	.swiper-3d {
+		perspective: 0;
+	}
+
+	.ac-container {
+		width: 370px;
+		gap: 10px;
+		padding-top: 20px;
+	}
+
+	.ac-container label {
+		background: #131716;
+		border-radius: 5px;
+	}
+
+	.rewiew_header {
+		text-align: center;
+	}
+
+	.choose_hookah_img {
+		width: 186px;
+		padding-top: 29px;
+	}
+
+	.accordion_open_btn {
+		height: 31px;
+	}
+
+	.lady_bgr_question {
+		top: 910%;
+	}
+
+	.rewiew_block_container {
+		display: flex;
+		align-items: center;
+		gap: 86px;
+		flex-direction: column;
+	}
+
+	.rewiew_heading {
+		text-align: center;
+	}
+
+	.rewiew_content {
+		align-items: center;
+	}
+
+	.bgi_rewiew {
+		margin-top: -45px;
+	}
+}
+
+@media (max-width: 480px) {
+	.header_static {
+		height: 100px;
+	}
+	.header_scrolling {
+		height: 100px;
+	}
+
+	#burger__checkbox:checked + .burger__label .stroke {
+		width: 44px;
+	}
+
+	.burger__label {
+		gap: 13px;
+	}
+
+	.stroke {
+		width: 37px;
+	}
+	.bgr_girl_filter {
+		width: 500px;
+	}
+	.order_btn {
+		padding: 14px 18px;
+	}
+
+	.main_header {
+		width: 311px;
+	}
+	.main_heading {
+		width: 311px;
+	}
+
+	.rent_header {
+		margin-bottom: 40px;
+	}
+
+	.main_text {
+		margin-top: 60px;
+		padding-bottom: 80px;
+	}
+
+	.tobacco_brand {
+		gap: 6px;
+	}
+
+	.tobacco_card_block {
+		gap: 8px;
+	}
+
+	.choose_hookah {
+		padding-bottom: 50px;
+	}
+
+	.choose_hookah_card {
+		width: 155px;
+		height: 218px;
+	}
+
+	.choose_hookah_hit {
+		left: -106px;
+		padding-right: 16px;
+		height: 35px;
+	}
+
+	.choose_hookah_img_mar {
+		margin-bottom: 11px;
+		margin-left: 20px;
+	}
+	.choose_hookah_content_name {
+		font-size: 12px;
+	}
+
+	.choose_hookah_content_price {
+		font-size: 16px;
+	}
+	.choose_hookah_content_description {
+		text-align: center;
+	}
+
+	.choose_hookah_content {
+		margin-top: -7px;
+	}
+	.tobacco_header {
+		margin-bottom: 20px;
+	}
+
+	.tobacco_paragraph {
+		margin-bottom: 20px;
+	}
+
+	.hookah_block {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: start;
+		width: fit-content;
+		margin-inline: auto;
+	}
+
+	.comp_line {
+		width: 55px;
+	}
+
+	.comp_sides {
+		flex-direction: column;
+		align-items: center;
+		gap: 8px;
+	}
+
+	.comp_card {
+		flex-direction: column;
+	}
+
+	.rent_content_block {
+		gap: 20px;
+	}
+
+	.rent__buy {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		width: fit-content;
+		gap: 20px;
+	}
+
+	.choose_hookah_img {
+		width: 110px;
+		padding-top: 16px;
+	}
+
+	.ac-container {
+		margin-left: auto;
+	}
+
+	.lady_bgr_question {
+		width: 155.166px;
+		height: 576.836px;
+		top: 998%;
+	}
+
+	.rewiew_block_container {
+		display: flex;
+		align-items: center;
+		gap: 96px;
+		flex-direction: column;
+	}
+
+	.swiper {
+		margin-bottom: 80px;
+	}
+
+	.footer {
+		height: 100px;
+	}
+
+	.tobacco_brand {
+		padding-bottom: 80px;
+	}
+}
