@@ -122,6 +122,9 @@ li {
 
 .header_logo {
 	cursor: pointer;
+	height: 100%
+}
+.header_logo_link{
 	height: clamp(90px, 25%, 152px);
 }
 
@@ -142,6 +145,7 @@ li {
 }
 
 .order_btn_header {
+	text-decoration: none;
 	width: 185px;
 	height: 47px;
 	display: inline-flex;
@@ -215,6 +219,7 @@ li {
 }
 
 .order_btn {
+	text-decoration: none;
 	display: inline-flex;
 	padding: 25px 67px;
 	flex-direction: column;
@@ -839,6 +844,9 @@ li {
 	top: 7px;
 	transition: 2s ease-in-out;
 }
+.ac-container input:checked + label img {
+	transform: rotate(180deg);
+}
 
 .ac-container input {
 	display: none;
@@ -922,13 +930,6 @@ li {
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-}
-
-.rewiew_form {
-	background-color: #fff;
-	border-radius: 15%;
-	width: 100px;
-	height: 100px;
 }
 
 .bgi_rewiew {
@@ -1045,6 +1046,10 @@ li {
 
 	.tobacco_brand {
 		gap: 30px;
+	}
+
+	.bgi_rewiew{
+		margin-top: -74px;
 	}
 }
 
@@ -1323,7 +1328,11 @@ li {
 	.ac-container {
 		width: 370px;
 		gap: 10px;
-		padding-top: 20px;
+		padding-top: 0;
+	}
+
+	.choose_hookah_header{
+		padding-bottom: 20px;
 	}
 
 	.ac-container label {
@@ -1412,6 +1421,10 @@ li {
 	.main_text {
 		margin-top: 60px;
 		padding-bottom: 80px;
+	}
+
+	.molasses_holder{
+		height: 225px;
 	}
 
 	.tobacco_brand {

@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link type="image/x-icon" href="./src/img/favicon.svg" rel="shortcut icon">
 		<meta name="description" content="Хотите покурить кальян в Дубае? ✔️ Аренда на сутки ✔️ Выбор табака и миксов ✔️ Профессиональная заправка ✔️Цены ниже чем в кальянных Дубая ✔️Привезем и заберем сами ☎️ +7 (985) 094-80-11">
 		<title>Аренда кальяна в Дубае 24/7 | Привезем за < 1 час. Лучшие кальяны Дубая по приятным ценам  </title>
 		<link rel="stylesheet" href="./src/page/index.css" />
@@ -21,7 +22,7 @@
 	<body>
 		<header id="main" class="header page_bgr_clr bgr_hookah">
 			<nav class="header_static">
-				<a href="#main">
+				<a class="header_logo_link" href="#main">
 					<img class="header_logo" alt="logo" src="./src/img/logo.svg" />
 				</a>
 				<ul class="header_btns">
@@ -31,9 +32,9 @@
 				</ul>
 
 				<div class="header_info_btns">
-					<button class="order_btn_header header_social_media">
+					<a class="order_btn_header header_social_media" target="_blank" onclick="FDPopup.open(205313,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/205313">
 						Оставить заявку
-					</button>
+					</a>
 					<a href="https://wa.me/79850948011">
 						<img
 						class="icons_tg_wa"
@@ -66,21 +67,25 @@
 							<a href="#hookah" class="header_btn">Кальяны</a>
 							<a href="#tobacco" class="header_btn">Табак</a>
 							
-							<button class="order_btn_header header_social_media">
+							<a class="order_btn_header header_social_media" target="_blank" onclick="FDPopup.open(205313,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/205313">
 								Оставить заявку
-							</button>
+							</a>
 							
 							<div class="header_mob_tgwa">
-								<img
-									class="icons_tg_wa"
-									src="./src/img/ri_whatsapp-fill.svg"
-									alt="whatsapp"
-								/>
-								<img
-									class="icons_tg_wa"
-									src="./src/img/uil_telegram.svg"
-									alt="telegram"
-								/>
+								<a href="https://wa.me/79850948011">
+									<img
+										class="icons_tg_wa"
+										src="./src/img/ri_whatsapp-fill.svg"
+										alt="whatsapp"
+									/>
+								</a>
+								<a  href="https://t.me/hookah_v_KaYF">
+									<img
+										class="icons_tg_wa"
+										src="./src/img/uil_telegram.svg"
+										alt="telegram"
+									/>
+								</a>
 							</div>
 						</ul>
 					</nav>
@@ -94,7 +99,7 @@
 					Лучшие кальяны Дубая. Бесплатно доставим в любую точку города.
 					Работаем 24/7
 				</h2>
-				<button class="order_btn">Оставить заявку</button>
+				<a class="order_btn" target="_blank" onclick="FDPopup.open(205313,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/205313">Оставить заявку</a>
 			</div>
 
 			<div class="bgr_girl_filter"></div>
@@ -366,7 +371,7 @@
 					</div>
 				</div>
 
-				<button class="order_btn">Оставить заявку</button>
+				<a class="order_btn" target="_blank" onclick="FDPopup.open(205313,{'hideCloseBtn':false,'host':'formdesigner.ru','overlay':{'background':'#000000','opacity':0.1}}); return false;" href="https://formdesigner.ru/form/view/205313">Оставить заявку</a>
 			</div>
 		</section>
 
@@ -606,14 +611,26 @@
 						Закажите бесплатную доставку самого вкусного и дымного кальяна!
 					</p>
 				</div>
-				<div class="rewiew_form"></div>
+		
+				<div id="form_205313_1"></div>
+				<script type="text/javascript">
+				(function (d, w, c) {
+					(w[c] = w[c] || []).push({formId:205313,host:"formdesigner.ru",formHeight:100, el: "form_205313_1",center: 1,scroll: 0});
+					var s = d.createElement("script"), g = "getElementsByTagName";
+					s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
+					s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js?v=0.0.3";
+					var h=d[g]("head")[0] || d[g]("body")[0];
+					h.appendChild(s);
+				})(document, window, "fdforms");
+				</script>
+			
 			</div>
 
 			<div class="bgi_rewiew"></div>
 		</section>
 
 		<footer class="footer">
-			<a href="#main">
+			<a class="header_logo_link" href="#main">
 				<img class="header_logo" alt="logo" src="./src/img/logo.svg" />
 			</a>
 
@@ -641,5 +658,6 @@
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
 		<script src="./src/page/index.js"></script>
+		<script type="text/javascript" src="https://formdesigner.ru/js/widgets/popup.js?v=0.0.3"></script>
 	</body>
 </html>
