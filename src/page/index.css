@@ -393,6 +393,7 @@ li {
 	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	
 }
 
 .block_paragraph {
@@ -781,6 +782,7 @@ li {
 	flex-direction: column;
 	width: 750px;
 	align-items: flex-start;
+	padding-top: 66px;
 }
 
 .accordion {
@@ -953,6 +955,11 @@ li {
 	width: 100%;
 }
 
+.footer_btns{
+	display: flex;
+	gap: 35px;
+}
+
 
 @media (max-width: 2000px){
 	.bgr_smoke_left{
@@ -1044,6 +1051,10 @@ li {
 @media (max-width: 769px) {
 	.header_social_media {
 		margin-right: 0;
+	}
+
+	.header_btns{
+		display: none;
 	}
 
 	.mobile {
@@ -1160,11 +1171,9 @@ li {
 		gap: 6px;
 	}
 
-	/* .header_btns {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	} */
+	.rent_buy_block{
+		padding-bottom: 80px;
+	}
 
 	.header__list_mob {
 		display: flex;
@@ -1363,10 +1372,6 @@ li {
 		height: 100px;
 	}
 
-	.header_btns{
-		display: none;
-	}
-
 	#burger__checkbox:checked + .burger__label .stroke {
 		width: 44px;
 	}
@@ -1505,8 +1510,9 @@ li {
 	}
 
 	.lady_bgr_question {
-		width: 155.166px;
-		height: 576.836px;
+		width: 155px;
+		height: 576px;
+
 	}
 
 	.rewiew_block_container {
@@ -1537,7 +1543,22 @@ li {
 	.tobacco_brand {
 		padding-bottom: 80px;
 	}
-	
+}
 
+@media (max-width: 376px) {
+	.choose_hookah_card {
+		width: 155px;
+	}
+
+	.accordion{
+		width: 310px;
+	}
+	.ac-container {
+		width: 353px;
+	}
+
+	.lady_bgr_question{
+		top: 770%;
+	}
 	
 }

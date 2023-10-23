@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Хотите покурить кальян в Дубае? ✔️ Аренда на сутки ✔️ Выбор табака и миксов ✔️ Профессиональная заправка ✔️Цены ниже чем в кальянных Дубая ✔️Привезем и заберем сами ☎️ +7 (985) 094-80-11">
 		<title>Аренда кальяна в Дубае 24/7 | Привезем за < 1 час. Лучшие кальяны Дубая по приятным ценам  </title>
-		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./src/page/index.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -19,9 +19,11 @@
 		/>
 	</head>
 	<body>
-		<header class="header page_bgr_clr bgr_hookah">
+		<header id="main" class="header page_bgr_clr bgr_hookah">
 			<nav class="header_static">
-				<img class="header_logo" alt="logo" src="../img/logo.svg" />
+				<a href="#main">
+					<img class="header_logo" alt="logo" src="./src/img/logo.svg" />
+				</a>
 				<ul class="header_btns">
 				<a href="#rent" class="header_btn">Аренда</a>
 				<a href="#hookah" class="header_btn">Кальяны</a>
@@ -32,16 +34,22 @@
 					<button class="order_btn_header header_social_media">
 						Оставить заявку
 					</button>
-					<img
+					<a href="https://wa.me/79850948011">
+						<img
 						class="icons_tg_wa"
-						src="../img/ri_whatsapp-fill.svg"
+						src="./src/img/ri_whatsapp-fill.svg"
 						alt="whatsapp"
+						
 					/>
-					<img
+					</a>
+
+					<a href="https://t.me/hookah_v_KaYF">					
+						<img
 						class="icons_tg_wa"
-						src="../img/uil_telegram.svg"
+						src="./src/img/uil_telegram.svg"
 						alt="telegram"
-					/>
+						/>
+					</a>
 				</div>
 
 				<div class="mobile">
@@ -65,12 +73,12 @@
 							<div class="header_mob_tgwa">
 								<img
 									class="icons_tg_wa"
-									src="../img/ri_whatsapp-fill.svg"
+									src="./src/img/ri_whatsapp-fill.svg"
 									alt="whatsapp"
 								/>
 								<img
 									class="icons_tg_wa"
-									src="../img/uil_telegram.svg"
+									src="./src/img/uil_telegram.svg"
 									alt="telegram"
 								/>
 							</div>
@@ -90,9 +98,9 @@
 			</div>
 
 			<div class="bgr_girl_filter"></div>
-			<img class="bgr_girl" src="../img/girl.png" alt="girl" />
-			<img class="bgr_smoke_left" src="../img/smoke.png" alt="smoke" />
-			<img class="bgr_smoke_right" src="../img/smoke.png" alt="smoke" />
+			<img class="bgr_girl" src="./src/img/girl.png" alt="girl" />
+			<img class="bgr_smoke_left" src="./src/img/smoke.png" alt="smoke" />
+			<img class="bgr_smoke_right" src="./src/img/smoke.png" alt="smoke" />
 		</header>
 
 		<section class="container_rent_block blur-overlay">
@@ -107,11 +115,11 @@
 				<div class="rent_block">
 					<img
 						class="molasses_holder"
-						src="../img/molasses-holder 1.png"
+						src="./src/img/molasses-holder 1.png"
 						alt=""
 					/>
 					<div class="nipper_orange_blur"></div>
-					<img class="nipper" src="../img/nipper.png" alt="" />
+					<img class="nipper" src="./src/img/nipper.png" alt="" />
 					<div class="rent_mini_block">
 						<div class="rent_content">
 							<h3 class="rent_heading">Выбирете кальян</h3>
@@ -138,22 +146,22 @@
 						<img
 							class="rent_img"
 							alt="hookah"
-							src="../img/rent/hookahSmallCircle.png"
+							src="./src/img/rent/hookahSmallCircle.png"
 						/>
 						<div class="rent_img_line"></div>
 						<img
 							class="rent_img"
 							alt="phone"
-							src="../img/rent/phoneWithHandCirle.png"
+							src="./src/img/rent/phoneWithHandCirle.png"
 						/>
 						<div class="rent_img_line"></div>
 						<img
 							class="rent_img"
 							alt="delivery"
-							src="../img/rent/deliveryGuyCircle.png"
+							src="./src/img/rent/deliveryGuyCircle.png"
 						/>
 						<div class="rent_img_line"></div>
-						<img class="rent_img" alt="car" src="../img/rent/carCircle.png" />
+						<img class="rent_img" alt="car" src="./src/img/rent/carCircle.png" />
 					</div>
 
 					<div class="rent_mini_block mini_block-right">
@@ -195,7 +203,7 @@
 						<div class="choose_hookah_content_card">
 							<img
 								class="choose_hookah_img choose_hookah_img_mar"
-								src="../img/chooseHookah/standart.png"
+								src="./src/img/chooseHookah/standart.png"
 								alt="hookah"
 							/>
 
@@ -210,7 +218,7 @@
 				<div class="choose_hookah_card">
 					<img
 						class="choose_hookah_img"
-						src="../img/chooseHookah/vip 1.png"
+						src="./src/img/chooseHookah/vip 1.png"
 						alt="hookah"
 					/>
 
@@ -226,7 +234,7 @@
 						<div class="choose_hookah_content_card">
 							<img
 								class="choose_hookah_img choose_hookah_img_mar"
-								src="../img/chooseHookah/2day.png"
+								src="./src/img/chooseHookah/2day.png"
 								alt="hookah"
 							/>
 
@@ -258,30 +266,30 @@
 				<div class="tobacco_brand">
 					<img
 						class="tobacco_brands"
-						src="../img/brands/musthave.png"
+						src="./src/img/brands/musthave.png"
 						alt="musthave"
 					/>
 					<img
 						class="tobacco_brands"
-						src="../img/brands/blackBurn.png"
+						src="./src/img/brands/blackBurn.png"
 						alt="blackBurn"
 					/>
-					<img class="tobacco_brands" src="../img/brands/adya.png" alt="adya" />
+					<img class="tobacco_brands" src="./src/img/brands/adya.png" alt="adya" />
 					<img
 						class="tobacco_brands"
-						src="../img/brands/alfaker.png"
+						src="./src/img/brands/alfaker.png"
 						alt="alfakher"
 					/>
 					<img
 						class="tobacco_brands"
-						src="../img/brands/darkside.png"
+						src="./src/img/brands/darkside.png"
 						alt="darkside"
 					/>
 				</div>
 			</div>
 		</div>
 		<section class="kit">
-			<img class="nipper_kit_bgr" src="../img/nipperKit.png" alt="nipperKit" />
+			<img class="nipper_kit_bgr" src="./src/img/nipperKit.png" alt="nipperKit" />
 
 			<div class="container kit_block">
 				<h2 class="choose_hookah_header">Что входит в набор</h2>
@@ -295,25 +303,25 @@
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/cup.png"
+								src="./src/img/hookahKit/cup.png"
 								alt="coloud"
 							/>
 							<p class="comp_description">2 чаши</p>
 						</div>
-						<img class="comp_line" src="../img/hookahKit/Line.svg" alt="line" />
+						<img class="comp_line" src="./src/img/hookahKit/Line.svg" alt="line" />
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/mouthpiece.png"
+								src="./src/img/hookahKit/mouthpiece.png"
 								alt="mounthpiece"
 							/>
 							<p class="comp_description">Мундштуки</p>
 						</div>
-						<img class="comp_line" src="../img/hookahKit/Line.svg" alt="line" />
+						<img class="comp_line" src="./src/img/hookahKit/Line.svg" alt="line" />
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/tile.png"
+								src="./src/img/hookahKit/tile.png"
 								alt="tile"
 							/>
 							<p class="comp_description">Плитка</p>
@@ -324,7 +332,7 @@
 						<p  class="comp_description">Кальян</p>
 						<img
 						class="comp_hookah"
-						src="../img/hookahKit/hookah.png"
+						src="./src/img/hookahKit/hookah.png"
 						alt="hookah"
 					/>
 					</div>
@@ -332,25 +340,25 @@
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/forceps.png"
+								src="./src/img/hookahKit/forceps.png"
 								alt="forceps"
 							/>
 							<p class="comp_description">Щипцы</p>
 						</div>
-						<img class="comp_line" src="../img/hookahKit/Line.svg" alt="line" />
+						<img class="comp_line" src="./src/img/hookahKit/Line.svg" alt="line" />
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/coal.png"
+								src="./src/img/hookahKit/coal.png"
 								alt="coal"
 							/>
 							<p class="comp_description">Уголь</p>
 						</div>
-						<img class="comp_line" src="../img/hookahKit/Line.svg" alt="line" />
+						<img class="comp_line" src="./src/img/hookahKit/Line.svg" alt="line" />
 						<div class="comp_card">
 							<img
 								class="comp_img"
-								src="../img/hookahKit/cloud.png"
+								src="./src/img/hookahKit/cloud.png"
 								alt="colloud"
 							/>
 							<p class="comp_description">Калауд</p>
@@ -367,7 +375,7 @@
 
 			<div class="rent__buy">
 				<div class="rent_content_block">
-					<img class="rent_img" src="../img/rent/money.png" alt="money" />
+					<img class="rent_img" src="./src/img/rent/money.png" alt="money" />
 					<h3 class="rent_p_orange">
 						Экономия <span class="rent_p_white">денег</span>
 					</h3>
@@ -382,7 +390,7 @@
 				</div>
 
 				<div class="rent_content_block">
-					<img class="rent_img" src="../img/rent/puzzles.png" alt="puzzles" />
+					<img class="rent_img" src="./src/img/rent/puzzles.png" alt="puzzles" />
 					<h3 class="rent_p_orange">
 						Разнообразие <span class="rent_p_white">выбора</span>
 					</h3>
@@ -397,7 +405,7 @@
 				</div>
 
 				<div class="rent_content_block">
-					<img class="rent_img" src="../img/rent/clock.png" alt="clock" />
+					<img class="rent_img" src="./src/img/rent/clock.png" alt="clock" />
 					<h3 class="rent_p_orange">
 						Свободное <span class="rent_p_white">время</span>
 					</h3>
@@ -420,27 +428,27 @@
 				<div class="swiper-wrapper">
 					<img
 						class="swiper-slide"
-						src="../img/clients/man.png"
+						src="./src/img/clients/man.png"
 						alt="clients"
 					/>
 					<img
 						class="swiper-slide"
-						src="../img/clients/girl2.png"
+						src="./src/img/clients/girl2.png"
 						alt="clients"
 					/>
 					<img
 						class="swiper-slide"
-						src="../img/clients/man3.png"
+						src="./src/img/clients/man3.png"
 						alt="clients"
 					/>
 					<img
 						class="swiper-slide"
-						src="../img/clients/girl4.png"
+						src="./src/img/clients/girl4.png"
 						alt="clients"
 					/>
 					<img
 						class="swiper-slide"
-						src="../img/clients/girl5.png"
+						src="./src/img/clients/girl5.png"
 						alt="clients"
 					/>
 				</div>
@@ -448,12 +456,12 @@
 				<div class="swiper_btns">
 					<img
 						class="swiper_btn_next"
-						src="../img/smallArrowCliLeft.svg"
+						src="./src/img/smallArrowCliLeft.svg"
 						alt="arrow"
 					/>
 					<img
 						class="swiper_btn_prev"
-						src="../img/smallArrowCliRight.svg"
+						src="./src/img/smallArrowCliRight.svg"
 						alt="arrow"
 					/>
 				</div>
@@ -465,12 +473,12 @@
 
 			<img
 				class="lady_bgr_question"
-				src="../img/lady_btm_bgr.png"
+				src="./src/img/lady_btm_bgr.png"
 				alt="ladyBgr"
 			/>
 			<img
 				class="pink_bgr_question"
-				src="../img/questionBgr_pink.svg"
+				src="./src/img/questionBgr_pink.svg"
 				alt="pinkBgr"
 			/>
 
@@ -479,7 +487,7 @@
 					<input id="ac-1" name="accordion-1" type="checkbox" />
 					<label for="ac-1"
 						>Какой срок аренды?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 
 					<article>
@@ -493,7 +501,7 @@
 					<input id="ac-2" name="accordion-1" type="checkbox" />
 					<label for="ac-2"
 						>Предусмотрен ли залог?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -508,7 +516,7 @@
 					<input id="ac-3" name="accordion-1" type="checkbox" />
 					<label for="ac-3"
 						>Как сделать заказ?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -522,7 +530,7 @@
 					<input id="ac-4" name="accordion-1" type="checkbox" />
 					<label for="ac-4"
 						>Сколько стоит доставка?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -538,7 +546,7 @@
 					<input id="ac-5" name="accordion-1" type="checkbox" />
 					<label for="ac-5"
 						>Нужно ли предъявлять документы?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -551,7 +559,7 @@
 					<input id="ac-6" name="accordion-1" type="checkbox" />
 					<label for="ac-6"
 						>Как происходит оплата?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>Мы принимаем оплату наличными во время доставки кальяна.</p>
@@ -561,7 +569,7 @@
 					<input id="ac-7" name="accordion-1" type="checkbox" />
 					<label for="ac-7"
 						>Как и когда возвращать кальян?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -575,7 +583,7 @@
 					<input id="ac-8" name="accordion-1" type="checkbox" />
 					<label for="ac-8"
 						>Справлюсь ли я самостоятельно?
-						<img class="accordion_open_btn" src="../img/orangeArrow.svg" alt="openBtn">
+						<img class="accordion_open_btn" src="./src/img/orangeArrow.svg" alt="openBtn">
 					</label>
 					<article>
 						<p>
@@ -605,7 +613,10 @@
 		</section>
 
 		<footer class="footer">
-			<img class="header_logo" alt="logo" src="../img/logo.svg" />
+			<a href="#main">
+				<img class="header_logo" alt="logo" src="./src/img/logo.svg" />
+			</a>
+
 			<ul class="footer_btns">
 				<a href="#rent" class="header_btn">Аренда</a>
 				<a href="#hookah" class="header_btn">Кальяны</a>
@@ -613,18 +624,22 @@
 			</ul>
 
 			<div>
-				<img
-					class="icons_tg_wa"
-					src="../img/ri_whatsapp-fill.svg"
-					alt="whatsapp"
-				/>
-				<img class="icons_tg_wa" src="../img/uil_telegram.svg" alt="telegram" />
+				<a href="https://wa.me/79850948011">
+					<img
+						class="icons_tg_wa"
+						src="./src/img/ri_whatsapp-fill.svg"
+						alt="whatsapp"
+					/>
+				</a>
+				<a href="https://t.me/hookah_v_KaYF">
+					<img class="icons_tg_wa" src="./src/img/uil_telegram.svg" alt="telegram" />
+				</a>
 			</div>
 		</footer>
 
 		<!-- Swiper JS -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-		<script src="index.js"></script>
+		<script src="./src/page/index.js"></script>
 	</body>
 </html>
