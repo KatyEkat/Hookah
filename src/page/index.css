@@ -138,6 +138,7 @@ li {
 	font-weight: 400;
 	line-height: normal;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .order_btn_header {
@@ -1159,9 +1160,11 @@ li {
 		gap: 6px;
 	}
 
-	.header_btns {
-		display: none;
-	}
+	/* .header_btns {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	} */
 
 	.header__list_mob {
 		display: flex;
@@ -1360,6 +1363,10 @@ li {
 		height: 100px;
 	}
 
+	.header_btns{
+		display: none;
+	}
+
 	#burger__checkbox:checked + .burger__label .stroke {
 		width: 44px;
 	}
@@ -1515,6 +1522,16 @@ li {
 
 	.footer {
 		height: 100px;
+	}
+
+	.footer_btns{
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.header_btn{
+		font-size: 16px;
 	}
 
 	.tobacco_brand {
