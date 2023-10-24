@@ -768,10 +768,9 @@ li {
 .lady_bgr_question {
 	position: absolute;
 	left: 0;
-	width: 669px;
-	height: 1105px;
 	width: clamp(373px, 80vw, 155px);
 	height: clamp(1290px, 80vw, 576px);
+	z-index: -1;
 }
 
 .question_block {
