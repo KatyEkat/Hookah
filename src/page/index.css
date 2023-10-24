@@ -282,7 +282,7 @@ li {
 	position: absolute;
 	top: 80%;
 	left: 0;
-	height: clamp(226px, 25%, 494px);
+	height: clamp(226px, 25%, 300px);
 }
 
 .nipper {
@@ -1196,10 +1196,6 @@ li {
 		text-align: center;
 	}
 
-	.main_header {
-		width: 573px;
-	}
-
 	.bgr_smoke_left {
 		bottom: -20%;
 	}
@@ -1266,14 +1262,8 @@ li {
 	}
 
 	.choose_hookah_card {
-		width: 270px;
+		width: calc(100vw /2.5);
 		height: 370px;
-	}
-
-	.choose_hookah_hit {
-		left: -115px;
-		padding-right: 31px;
-		justify-content: flex-end;
 	}
 
 	.choose_hookah_content_name {
@@ -1358,7 +1348,7 @@ li {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 560px) {
 	.header_static {
 		height: 100px;
 	}
@@ -1427,13 +1417,6 @@ li {
 	.choose_hookah_card {
 		width: 155px;
 		height: 218px;
-	}
-
-	.choose_hookah_hit {
-		left: -36px;
-		padding-right: 16px;
-		height: 35px;
-		width: 58px;
 	}
 
 	.choose_hookah_img_mar {
@@ -1537,6 +1520,13 @@ li {
 
 	.tobacco_brand {
 		padding-bottom: 80px;
+	}
+
+	.choose_hookah_hit {
+		left: -25px;
+		padding-right: 1px;
+		height: 29px;
+		width: 65px;
 	}
 }
 
