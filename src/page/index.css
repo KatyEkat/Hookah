@@ -4,6 +4,7 @@
 }
 
 body {
+	min-width: 400px;
 	background: #131716;
 	overflow-x: hidden;
 }
