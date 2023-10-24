@@ -955,11 +955,12 @@ li {
 
 @media (max-width: 2000px){
 	.bgr_smoke_left{
-		top: 60%;
+		bottom: -40%;
 	}
 
 	.bgr_smoke_right{
-		top: 60%;
+		bottom: -40%;
+
 	}
 }
 
@@ -1200,11 +1201,11 @@ li {
 	}
 
 	.bgr_smoke_left {
-		top: 80%;
+		bottom: -20%;
 	}
 
 	.bgr_smoke_right {
-		top: 80%;
+		bottom: -20%;
 	}
 
 	.rent_content_block {
@@ -1374,11 +1375,11 @@ li {
 	}
 
 	.bgr_smoke_right{
-		top: 85%;
+		bottom: -13%;
 	}
 
 	.bgr_smoke_left{
-		top: 85%;
+		bottom: -13%;
 	}
 
 	.stroke {
