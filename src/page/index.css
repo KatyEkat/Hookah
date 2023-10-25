@@ -121,8 +121,10 @@ li {
 
 .header_logo {
 	cursor: pointer;
-	height: 100%
+	width: 152px;
+	height: 152px;
 }
+
 .header_logo_link{
 	height: clamp(90px, 25%, 152px);
 }
@@ -1026,6 +1028,12 @@ li {
 }
 
 @media (max-width: 988px) {
+	.header_logo {
+		cursor: pointer;
+		width: 132px;
+		height: 132px;
+	}
+
 	.hookah_block {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
@@ -1051,6 +1059,12 @@ li {
 @media (max-width: 769px) {
 	.header_social_media {
 		margin-right: 0;
+	}
+
+	.header_logo {
+		cursor: pointer;
+		width: 122px;
+		height: 122px;
 	}
 
 	.header_btns{
@@ -1357,6 +1371,11 @@ li {
 @media (max-width: 560px) {
 	.header_static {
 		height: 100px;
+	}
+	.header_logo {
+		cursor: pointer;
+		width: 80px;
+		height: 80px;
 	}
 	.header_scrolling {
 		height: 100px;
