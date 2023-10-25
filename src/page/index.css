@@ -761,10 +761,9 @@ li {
 	width: clamp(373px, 80vw, 155px);
 	height: clamp(1290px, 80vw, 576px);
 	border-radius: 1105px;
+	-webkit-backdrop-filter: blur(5px);
 	background: rgb(203,33,72);;
 	filter: blur(243px);
-	position: absolute;
-	left: 0;
 }
 
 .lady_bgr_question {
