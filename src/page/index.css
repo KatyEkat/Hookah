@@ -301,10 +301,10 @@ li {
 	position: absolute;
 	right: -721px;
 	top: 45vh;
-
 	width: 896px;
 	height: 749px;
 	border-radius: 896px;
+	-webkit-appearance: none;
 	background: rgb(255,132,79);
 	filter: blur(151px);
 }
@@ -762,8 +762,9 @@ li {
 	height: clamp(1290px, 80vw, 576px);
 	border-radius: 1105px;
 	-webkit-backdrop-filter: blur(5px);
-	background: rgb(203,33,72);;
+	background: rgb(203,33,72);
 	filter: blur(243px);
+	opacity: 0.5;
 }
 
 .lady_bgr_question {
@@ -1329,6 +1330,7 @@ li {
 
 	.choose_hookah_header{
 		padding-bottom: 20px;
+		z-index: 1;
 	}
 
 	.ac-container label {
