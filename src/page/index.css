@@ -305,7 +305,7 @@ li {
 	height: 749px;
 	border-radius: 896px;
 	-webkit-appearance: none;
-	background: rgb(255,132,79);
+	background: rgb(255,132,79, 0.5)!important;
 	filter: blur(151px);
 }
 
