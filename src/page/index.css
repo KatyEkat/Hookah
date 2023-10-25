@@ -952,6 +952,10 @@ li {
 	gap: 35px;
 }
 
+.tg_wa_links{
+	text-decoration: none;
+}
+
 
 @media (max-width: 2000px){
 	.bgr_smoke_left{
@@ -1154,6 +1158,7 @@ li {
 	}
 
 	.header__nav_mobile {
+		display: none;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -1301,6 +1306,7 @@ li {
 	.swiper-3d {
 		perspective: 0;
 	}
+
 
 	.ac-container {
 		width: 370px;
@@ -1484,6 +1490,10 @@ li {
 	.choose_hookah_img {
 		width: 110px;
 		padding-top: 16px;
+	}
+
+	.accordion{
+		width: 340px;
 	}
 
 	.ac-container {
